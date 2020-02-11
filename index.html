@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Check List</title>
+  </head>
+  <body>
+    <h1>Check List</h1>
+    <ul class="checklist" id="ckecklist">
+      <label>Marcar todos</label>
+      <ul class="hascheck" id="exatas">
+        <label>Exatas</label>
+        <li class="itemcheck" id="fisica">Física</li>
+        <li class="itemcheck" id="matematica">Matemática</li>
+        <li class="itemcheck" id="quimica">Química</li>
+      </ul>
+      <ul class="hascheck" id="humanas">
+        <label>Humanas</label>
+        <li class="itemcheck" id="portugues">Português</li>
+        <li class="itemcheck" id="geografia">Geografia</li>
+        <ul class="hascheck isItem" id="historia">
+          <label>História</label>
+          <li class="itemcheck" id="historia_geral">História Geral</li>
+          <li class="itemcheck" id="historia_brasil">
+            História do Brasil
+          </li>
+        </ul>
+        <li class="itemcheck" id="filosofia">Filosofia</li>
+        <li class="itemcheck" id="sociologia">Sociologia</li>
+      </ul>
+      <li class="itemcheck" id="redacao">Redação</li>
+    </ul>
+    <style>
+      li {
+        padding-left: 40px;
+      }
+      .isItem {
+        padding-inline-start: 40px;
+      }
+    </style>
+    <script src="src/checklist.js"></script>
+  </body>
+</html>
